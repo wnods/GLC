@@ -66,7 +66,7 @@ def plot_contour(f, x_range, y_range, levels=None):
 show_instructions()
 
 # Solicitar a função do usuário
-func_str = input("Digite a função que deseja calcular (use x e y como variáveis, por exemplo, 'y * np.exp(x)'): ")
+func_str = input("Digite a função que deseja calcular (use x e y como variáveis) ")
 
 # Criar a função dinamicamente usando eval
 def user_function(x, y):
