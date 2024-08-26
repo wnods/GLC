@@ -62,6 +62,12 @@ def plot_contour(f, x_range, y_range, levels=None):
 
     plt.show()
 
+if save_as:
+        plt.savefig(save_as, format='png')
+        print(f"Gráfico salvo como {save_as}")
+
+    plt.show()
+
 show_instructions()
 
 # usuário string para input da função desejada
