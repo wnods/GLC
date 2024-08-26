@@ -59,11 +59,7 @@ def plot_contour(f, x_range, y_range, levels=None):
     plt.grid(True)
     plt.axhline(0, color='black', linewidth=0.5)
     plt.axvline(0, color='black', linewidth=0.5)
-
-if save_as:
-        plt.savefig(save_as, format='png')
-        print(f"Gráfico salvo como {save_as}")
-
+    
     plt.show()
 
 
