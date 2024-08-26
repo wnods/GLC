@@ -1,6 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+Autor: Wilson Weliton Oliveira de Souza
+Projeto: O projeto visa aplicar uma forma rápida de visualização de mapa de contornos para funções de várias variáveis de forma simples e rápida. Está em fase de desenvolvimento para funções mais complexas.
+
+"""
+
 def show_instructions():
     """
     Exibe as instruções sobre como usar o código e fornece exemplos de funções que podem ser inseridas.
