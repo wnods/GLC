@@ -38,21 +38,20 @@ def plot_contour(f, x_range, y_range, levels=None):
         y_range (tuple): Intervalo para o eixo y (min, max).
         levels (list, optional): Níveis das curvas de contorno a serem plotadas. Se None, será utilizado um conjunto padrão.
     """
-    # Definir o intervalo para x e y
+    # função do código que define x e y
     x = np.linspace(x_range[0], x_range[1], 400)
     y = np.linspace(y_range[0], y_range[1], 400)
     X, Y = np.meshgrid(x, y)
 
-    # Calcular f(x, y)
     Z = f(X, Y)
 
-    # Plotar as curvas de nível
+   # plot das curvas de nivel para cada função dada
     plt.figure(figsize=(8, 8))
     if levels is None:
-        levels = np.linspace(Z.min(), Z.max(), 10)  # Níveis padrão
+        levels = np.linspace(Z.min(), Z.max(), 10)  
     contours = plt.contour(X, Y, Z, levels=levels)
 
-    # Adicionar labels e título
+    
     plt.clabel(contours, inline=True, fontsize=8)
     plt.title(f'Mapa de Contorno para a Função')
     plt.xlabel('x')
@@ -63,16 +62,14 @@ def plot_contour(f, x_range, y_range, levels=None):
 
     plt.show()
 
-# Mostrar instruções
 show_instructions()
 
-# Solicitar a função do usuário
+# usuário string para input da função desejada
 func_str = input("Digite a função que deseja calcular (use x e y como variáveis) ")
 
-# Criar a função dinamicamente usando eval
+
 def user_function(x, y):
     return eval(func_str)
 
-# Usar a função plot_contour
 plot_contour(user_function, (0, 10), (-5, 5), levels=[1, 2, 3, 4])
 
