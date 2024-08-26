@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 """
 Autor: Wilson Weliton Oliveira de Souza
 Data: 25/08/2024
-Projeto: O projeto visa aplicar uma forma rápida de visualização de mapa de contornos para funções de várias variáveis de forma simples e rápida. Está em fase de desenvolvimento para funções mais complexas.
+Projeto: O projeto visa aplicar uma forma rápida de visualização de mapa de contornos para funções de várias variáveis de forma simples e rápida. 
+Está em fase de desenvolvimento para funções mais complexas.
 
 """
 
