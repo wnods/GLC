@@ -22,7 +22,6 @@ def show_instructions() -> None:
 def parse_function(func_str: str) -> Callable[[np.ndarray, np.ndarray], np.ndarray]:
     x, y = sp.symbols('x y')
 
-    # Mapping of numpy functions to sympy functions
     numpy_to_sympy = {
         'np.sin': 'sp.sin',
         'np.cos': 'sp.cos',
@@ -33,7 +32,7 @@ def parse_function(func_str: str) -> Callable[[np.ndarray, np.ndarray], np.ndarr
         'np.abs': 'sp.Abs'
     }
 
-    # Replace numpy function names with sympy function names
+   
     for np_func, sp_func in numpy_to_sympy.items():
         func_str = func_str.replace(np_func, sp_func)
 
@@ -66,9 +65,7 @@ def plot_contour(f: Callable[[np.ndarray, np.ndarray], np.ndarray],
 
 show_instructions()
 
-# Solicita a função ao usuário
 func_str = input("Digite a função que deseja calcular (use x e y como variáveis): ")
 user_function = parse_function(func_str)
 
-# Gera o gráfico
 plot_contour(user_function, (0, 10), (-5, 5), levels=[1, 2, 3, 4])
