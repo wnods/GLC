@@ -39,14 +39,12 @@ def validate_function(func_str: str) -> bool:
         return False
 
 def calculate_derivatives_and_extrema(expr: sp.Expr, x: sp.Symbol, y: sp.Symbol):
-    # Derivadas parciais
+
     fx = sp.diff(expr, x)
     fy = sp.diff(expr, y)
     
-    # Pontos críticos (solução onde as derivadas parciais são zero)
     critical_points = sp.solve([fx, fy], (x, y))
     
-    # Determinando se os pontos críticos são mínimos ou máximos
     second_derivative_xx = sp.diff(fx, x)
     second_derivative_yy = sp.diff(fy, y)
     second_derivative_xy = sp.diff(fx, y)
@@ -85,8 +83,7 @@ def plot_interactive_surface_and_contour(f: Callable[[np.ndarray, np.ndarray], n
 
     surface = go.Surface(z=Z, x=X, y=Y, colorscale='Viridis')
     contours = go.Contour(z=Z, x=x, y=y, colorscale='Viridis')
-    
-    # Adiciona pontos de mínimo e máximo ao gráfico
+
     markers = []
     if extrema:
         for etype, point in extrema:
@@ -124,11 +121,9 @@ if validate_function(func_str):
 
     user_function, expr, x, y = parse_function(func_str, fixed_vars)
     
-    # Calcula derivadas, extremos e limites
     fx, fy, extrema = calculate_derivatives_and_extrema(expr, x, y)
     limit_x_inf, limit_y_inf, limit_x_neg_inf, limit_y_neg_inf = calculate_limits(expr, x, y)
     
-    # Mostra a equação, derivadas, extremos e limites
     print(f"Equação: f(x, y) = {expr}")
     print(f"Derivada parcial em relação a x: ∂f/∂x = {fx}")
     print(f"Derivada parcial em relação a y: ∂f/∂y = {fy}")
