@@ -88,5 +88,5 @@ func_str = input("Digite a função que deseja calcular (use x e y como variáve
 user_function = parse_function(func_str)
 
 
-plot_contour(user_function, (0, 10), (-5, 5), levels=[1, 2, 3, 4])
+plot_contour(user_function, (0, 10), (-5, 5), levels=[0.1, 0.2, 0.4, 0.6, 0.8, 1.0 ])
 
