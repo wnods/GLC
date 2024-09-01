@@ -11,10 +11,10 @@ The project is still under development and the next updates will focus on the fo
 - [x] 2D views of Levels Curves and customization
 - [x] 2D and 3D views of Levels Curves and Customization
 - [x] Interactive 3D graphs of Levels Curves.
-- [ ] More customization, more interactive, more informations of equation using and calculus working for surfaces3 3D: grad, deriavate parcial etc.
+- [ ] More customization, more interactive, more informations of equation using and calculus working for surfaces3 3D: grad, der. parcial etc.
 
 
-## Requiriments:
+## Requirements:
 
 Before you begin, make sure you meet the following requirements:
 
