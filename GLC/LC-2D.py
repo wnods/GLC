@@ -85,11 +85,11 @@ def plot_contour(f: Callable[[np.ndarray, np.ndarray], np.ndarray],
 
     if save_as_png:
         if not filename:
-            filename = 'GLC.png'  # Use default filename if none provided
+            filename = 'GLC.png' 
         plt.savefig(filename, format='png')
         print(f"Gráfico salvo como {filename}")
 
-    plt.show(block=True)  # Ensure the plot is shown correctly
+    plt.show(block=True) 
 
 show_instructions()
 
@@ -97,9 +97,9 @@ func_str = input("Digite a função que deseja calcular (use x e y como variáve
 user_function = parse_function(func_str)
 
 save_option = input("Deseja salvar o Gráfico das Curvas de Nível? (Y/N): ").strip().lower()
-save_as_png = save_option == 'y'  # ensure correct boolean value
+save_as_png = save_option == 'y'  
 
-filename = "GLC.png"  # default filename
+filename = "GLC.png"  
 if save_as_png:
     custom_filename = input("Digite o nome do arquivo (ex: meu_grafico.png): ").strip()
     if custom_filename:
@@ -108,11 +108,11 @@ if save_as_png:
 # Customization options
 color_map = input("Escolha um mapa de cores (ex: 'viridis', 'plasma', 'inferno', 'cividis'): ").strip()
 if not color_map:
-    color_map = 'viridis'  # default color map
+    color_map = 'viridis'  
 
 line_style = input("Escolha um estilo de linha (ex: '-', '--', '-.', ':'): ").strip()
 if not line_style:
-    line_style = '-'  # default line style
+    line_style = '-'  
 
 plot_contour(user_function, (0, 10), (-5, 5), levels=[0.1, 0.2, 0.4, 0.6, 0.8, 1.0], 
              save_as_png=save_as_png, filename=filename, color_map=color_map, line_style=line_style)
