@@ -20,14 +20,12 @@ Data: 25/08/2024                                                                
 
 """
 
-
-
 def show_instructions() -> None:
     print("Bem-vindo ao Gerador de Mapas de Contornos/Curva de Nível!")
     print("Este programa permite que você insira uma função matemática de duas variáveis (x, y) e visualize seu gráfico de contorno.")
     print("\nInstruções:")
     print("1) Insira a função desejada usando 'x' e 'y' como variáveis.")
-    print("2) Utilize as funções matemáticas do NumPy, como np.exp, np.sin, np.cos, np.sqrt, etc.")
+    print("2) Utilize as funções matemáticas como exp, sin, cos, sqrt, etc.")
     print("3) Não inclua a parte 'f(x,y) =' na sua entrada. Apenas insira a expressão matemática.")
     print("4) Use '**' para exponenciação em vez de '^'.")
     print("\nExemplos de funções que você pode inserir:")
@@ -87,11 +85,11 @@ def plot_contour(f: Callable[[np.ndarray, np.ndarray], np.ndarray],
 
     if save_as_png:
         if not filename:
-            filename = 'GLC.png'  
+            filename = 'GLC.png'  # Use default filename if none provided
         plt.savefig(filename, format='png')
         print(f"Gráfico salvo como {filename}")
 
-    plt.show(block=True)  
+    plt.show(block=True)  # Ensure the plot is shown correctly
 
 show_instructions()
 
@@ -99,28 +97,22 @@ func_str = input("Digite a função que deseja calcular (use x e y como variáve
 user_function = parse_function(func_str)
 
 save_option = input("Deseja salvar o Gráfico das Curvas de Nível? (Y/N): ").strip().lower()
-save_as_png = save_option == 'y'  
+save_as_png = save_option == 'y'  # ensure correct boolean value
 
-filename = "GLC.png"  
+filename = "GLC.png"  # default filename
 if save_as_png:
     custom_filename = input("Digite o nome do arquivo (ex: meu_grafico.png): ").strip()
     if custom_filename:
         filename = custom_filename
 
-     
-                               """
-                               
-                     Customização do gráfico
-                               
-                               """
-                               
+# Customization options
 color_map = input("Escolha um mapa de cores (ex: 'viridis', 'plasma', 'inferno', 'cividis'): ").strip()
 if not color_map:
-    color_map = 'viridis'  
+    color_map = 'viridis'  # default color map
 
 line_style = input("Escolha um estilo de linha (ex: '-', '--', '-.', ':'): ").strip()
 if not line_style:
-    line_style = '-' 
+    line_style = '-'  # default line style
 
 plot_contour(user_function, (0, 10), (-5, 5), levels=[0.1, 0.2, 0.4, 0.6, 0.8, 1.0], 
              save_as_png=save_as_png, filename=filename, color_map=color_map, line_style=line_style)
