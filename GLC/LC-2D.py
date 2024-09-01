@@ -3,6 +3,24 @@ import matplotlib.pyplot as plt
 import sympy as sp
 from typing import Callable, Tuple, List
 
+"""
+===========================================================================================
+===========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                                                                        %%%
+Projeto desenvolvido com a funcionabilidade de interação ao usuário e simplicidade para %%% 
+visualização de curvas de nível a partir de uma dada função.                            %%%
+                                                                                        %%%
+Autor: Wilson Weliton Oliveira de Souza                                                 %%%
+Data: 25/08/2024                                                                        %%%     
+                                                                                        %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+===========================================================================================
+===========================================================================================
+
+"""
+
+
 
 def show_instructions() -> None:
     print("Bem-vindo ao Gerador de Mapas de Contornos/Curva de Nível!")
