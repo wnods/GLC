@@ -4,7 +4,7 @@
 
 > GLC is a Python project aimed at constructing contour maps or level curves of a function with two or more variables. The project was inspired by exercises from a Calculus III course on partial derivatives. It is implemented in a straightforward manner to facilitate visualization.
 
-### Adjustments and Improvements
+### Adjustments and Improvements:
 
 The project is still under development and the next updates will focus on the following tasks:
 
@@ -14,7 +14,7 @@ The project is still under development and the next updates will focus on the fo
 - [ ] More customization, more interactive, more informations of equation using and calculus working for surfaces3 3D: grad, deriavate parcial etc.
 
 
-## Requiriments
+## Requiriments:
 
 Before you begin, make sure you meet the following requirements:
 
@@ -38,7 +38,7 @@ For installing the project, follow these steps:
     pip install -r requirements.txt
     ```
 
-## How its Works
+## How its Works:
 - Run the script to generate and visualize the level curves:
 - When you launch the code in the terminal or IDE of your choice, it will welcome you and give you the option to make your graph.
 - By choosing your function that depends on x and y to form the contour line where z = k. You will plot contour line graphs in a given range that can be modified in the code "LC-2D.py","Surface3D.py" or "Intsurf3D.py".
@@ -62,7 +62,7 @@ For installing the project, follow these steps:
 
    > This function creates a surface that looks like a "saddle", where the curvature is positive along one direction and negative along the other. The functions is: z = (x**2 - y**2)
 
-## 3D Interactive Surfaces
+## 3D Interactive Surfaces:
 
 - They give us a 3D surface in Browser. This allows us to know the minimum and maximum points, and view the contour lines using sliders on the surfaces we choose. With this, we can have precise limits and trends for the surface in question.
 
