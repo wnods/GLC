@@ -48,8 +48,18 @@ For installing the project, follow these steps:
 <img src="/GLC/graphs/examples/LC-2D_example.png" alt="img1">
 
 ## 2D Graphs of Levels Curves:
-- São gráficos plotados diretamente por uma função de x e y onde z = k. Essas curvas de níveis nós dar informação 2D de uma superfície 3D.
+- They are graphs plotted directly by a function of x and y where z = k. These contour lines give us 2D information of a 3D surface.
 
  <img src="GLC/graphs/graph2.png" alt="img2">   
+
+ > The function that represents the figure is the egg box function: sin(x) - sin(y).
+
+## 3D Surface and 2D Levels Curves.
+
+- They are graphs plotted directly by a function of x, y, z or z = k. These func give us a 3D surface and your 2D levels curves.
+
+   <img src="GLC_3D/graphs/graph6.png" alt="img6">   
+
+   > This function creates a surface that looks like a "saddle", where the curvature is positive along one direction and negative along the other. The functions is: z = (x**2 - y**2)
   
 
