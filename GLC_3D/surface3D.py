@@ -155,7 +155,6 @@ if validate_function(func_str):
         save_path = None
     
     
-    plot_surface_and_contour(user_function, (0, 10), (-5, 5), levels=[1, 2, 3, 4], save_path=save_path)
+    plot_surface_and_contour(user_function, (0, 10), (-5, 5), levels=[0.1, 0.4, 0.7, 1, 1.2, 1.4, 1.8], save_path=save_path)
 else:
     print("Erro: A função inserida é inválida. Por favor, insira uma função válida.")
-
