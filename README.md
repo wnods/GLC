@@ -45,7 +45,7 @@ For installing the project, follow these steps:
 
 # Example:
 
-<img src="GLC/graphs/examples/LC-2D_example.png" alt="img1">
+<img src="/GLC/graphs/examples/LC-2D_example.png" alt="img1">
 
 ## 2D Graphs of Levels Curves:
 - São gráficos plotados diretamente por uma função de x e y onde z = k. Essas curvas de níveis nós dar informação 2D de uma superfície 3D.
