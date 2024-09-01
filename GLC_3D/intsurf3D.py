@@ -133,7 +133,7 @@ if validate_function(func_str):
     
     fixed_vars = {}
     while True:
-        var_input = input("Digite a variável e valor para fixar (ex.: z=1), ou pressione Enter para continuar: ")
+        var_input = input("Digite a variável e valor para fixar (ex.: z=1), ou pressione ENTER para continuar: ")
         if not var_input:
             break
         var, value = var_input.split('=')
