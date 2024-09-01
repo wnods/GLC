@@ -43,6 +43,10 @@ For installing the project, follow these steps:
 - When you launch the code in the terminal or IDE of your choice, it will welcome you and give you the option to make your graph.
 - By choosing your function that depends on x and y to form the contour line where z = k. You will plot contour line graphs in a given range that can be modified in the code "LC-2D.py","Surface3D.py" or "Intsurf3D.py".
 
+# Example:
+
+<img src="GLC/graphs/examples/LC-2D_example.png" alt="img1">
+
 ## 2D Graphs of Levels Curves:
 - São gráficos plotados diretamente por uma função de x e y onde z = k. Essas curvas de níveis nós dar informação 2D de uma superfície 3D.
 
