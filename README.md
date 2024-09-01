@@ -1,7 +1,7 @@
 
 
 # GLC - Generator Level Curves
-This project is in the development phase. The idea is to build a graph of the functions of several variables that plots several level curves. The development started from Calculus III list exercises of Partial Derivatives. For a better visualization, the code was implemented in a basic and simple way.
+
 ## Overview
 
 GLC is a Python project aimed at constructing contour maps or level curves of a function with two or more variables. The project was inspired by exercises from a Calculus III course on partial derivatives. It is implemented in a straightforward manner to facilitate visualization.
