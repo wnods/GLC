@@ -6,7 +6,7 @@
 
 ### Adjustments and Improvements
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
+The project is still under development and the next updates will focus on the following tasks:
 
 - [x] 2D views of Levels Curves and customization
 - [x] 2D and 3D views of Levels Curves and Customization
@@ -16,7 +16,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 ## Requiriments
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Before you begin, make sure you meet the following requirements:
 
 - You have installed the latest version of `python, numpy, sympy and matplotlib`
 - You have a `Win/Linux/Mac` machine.
@@ -61,5 +61,13 @@ For installing the project, follow these steps:
    <img src="GLC_3D/graphs/graph6.png" alt="img6">   
 
    > This function creates a surface that looks like a "saddle", where the curvature is positive along one direction and negative along the other. The functions is: z = (x**2 - y**2)
+
+## 3D Interactive Surfaces
+
+- They give us a 3D surface in Browser. This allows us to know the minimum and maximum points, and view the contour lines using sliders on the surfaces we choose. With this, we can have precise limits and trends for the surface in question.
+
+  <img src="GLC_3D/graphs/graph7.gif" alt="gif6"> 
+
+  > The 3D surfaces that represents the figure is the egg box function: sin(x) - sin(y).
   
 
