@@ -46,6 +46,6 @@ For installing the project, follow these steps:
 ## 2D Graphs of Levels Curves:
 - São gráficos plotados diretamente por uma função de x e y onde z = k. Essas curvas de níveis nós dar informação 2D de uma superfície 3D.
 
- <img src="GLC/graphs/grafico2.png" alt="img1">   
+ <img src="GLC/graphs/graphs2.png" alt="img2">   
   
 
