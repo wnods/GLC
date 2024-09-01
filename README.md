@@ -1,6 +1,6 @@
 ## GLC - Generator Level Curves
 
-<img src="/GLC/graphs/grafico1.png" alt="img1">
+<img src="GLC/graphs/grafico1.png" alt="img1">
 
 > GLC is a Python project aimed at constructing contour maps or level curves of a function with two or more variables. The project was inspired by exercises from a Calculus III course on partial derivatives. It is implemented in a straightforward manner to facilitate visualization.
 
@@ -46,6 +46,6 @@ For installing the project, follow these steps:
 ## 2D Graphs of Levels Curves:
 - São gráficos plotados diretamente por uma função de x e y onde z = k. Essas curvas de níveis nós dar informação 2D de uma superfície 3D.
 
- <img src="/GLC/graphs/grafico2.png" alt="img1">   
+ <img src="GLC/graphs/grafico2.png" alt="img1">   
   
 
